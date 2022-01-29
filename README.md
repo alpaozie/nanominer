@@ -38,7 +38,7 @@
 |    ERG+ZIL    |                     |          &check;        |
 |    RVN+ZIL    |                     |          &check;        |
 |    FIRO+ZIL   |                     |          &check;        |
-When mining Zilliqa on a different pool, **nanominer** will use a placeholder `0xffffffffffffffffffffffffffffffffffffffff` ETH/ETC address to authorize on Zilliqa pool.
+When mining Zilliqa on a different pool, **nanominer** will use a placeholder `0x2482224523ce1a0d91c2f7c2b718224b11c0128f` ETH/ETC address to authorize on Zilliqa pool.
 
 ## Driver requirements
 
@@ -361,7 +361,7 @@ The helper scripts folder with all of its contents is still there, for those who
 Example of a configuration file for split Ethereum and Zilliqa:
 ```ini
 [Ethash]
-wallet = 0xffffffffffffffffffffffffffffffffffffffff
+wallet = 0x2482224523ce1a0d91c2f7c2b718224b11c0128f
 ; nanopool by default
 [Zilliqa]
 wallet = zilxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
@@ -372,7 +372,7 @@ pool3 = asia.ezil.me:5555
 Example of a configuration file for merged Ethereum and Zilliqa:
 ```ini
 [Ethash]
-wallet = 0xffffffffffffffffffffffffffffffffffffffff.zilxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+wallet = 0x2482224523ce1a0d91c2f7c2b718224b11c0128f
 zilEpoch = 0
 pool1 = eu.ezil.me:5555
 pool2 = us-west.ezil.me:5555
@@ -381,7 +381,7 @@ pool3 = asia.ezil.me:5555
 Example of a configuration file for Ethereum and Monero:
 ```ini
 [Ethash]
-wallet = 0xffffffffffffffffffffffffffffffffffffffff
+wallet = 0x2482224523ce1a0d91c2f7c2b718224b11c0128f
 rigName = rig1
 email = someemail@org
 pool1 = eth-eu1.nanopool.org:9999
@@ -392,7 +392,7 @@ pool5 = eth-asia1.nanopool.org:9999
 pool6 = eth-jp1.nanopool.org:9999
 pool7 = eth-au1.nanopool.org:9999
 [RandomX]
-wallet = fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+wallet = 0x2482224523ce1a0d91c2f7c2b718224b11c0128f
 rigName = rig1
 email = someemail@org
 pool1 = xmr-eu1.nanopool.org:14433
@@ -404,7 +404,7 @@ pool5 = xmr-asia1.nanopool.org:14433
 Example of a configuration file for Ethereum:
 ```ini
 [Ethash]
-wallet = 0xffffffffffffffffffffffffffffffffffffffff
+wallet = 0x2482224523ce1a0d91c2f7c2b718224b11c0128f
 rigName = rig1
 email = someemail@org
 pool1 = eth-eu1.nanopool.org:9999
@@ -418,19 +418,19 @@ pool7 = eth-au1.nanopool.org:9999
 Example of an equivalent file for Ethereum:
 ```ini
 [Ethash]
-wallet = 0xffffffffffffffffffffffffffffffffffffffff
+wallet = 0x2482224523ce1a0d91c2f7c2b718224b11c0128f
 rigName = rig1
 email = someemail@org
 ```
 Example of a minimum file for Ethereum:
 ```ini
 [Ethash]
-wallet=0xffffffffffffffffffffffffffffffffffffffff
+wallet=0x2482224523ce1a0d91c2f7c2b718224b11c0128f
 ```
 Example of a configuration file for split Ethereum Classic and Zilliqa:
 ```ini
 [Etchash]
-wallet = 0xffffffffffffffffffffffffffffffffffffffff
+wallet = 0x2482224523ce1a0d91c2f7c2b718224b11c0128f
 ; nanopool by default
 [Zilliqa]
 wallet = zilxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
@@ -441,7 +441,7 @@ pool3 = asia.ezil.me:5555
 Example of a configuration file for merged Ethereum Classic and Zilliqa:
 ```ini
 [Etchash]
-wallet = 0xffffffffffffffffffffffffffffffffffffffff.zilxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+wallet = 0x2482224523ce1a0d91c2f7c2b718224b11c0128f
 zilEpoch = 0
 pool1 = eu.ezil.me:4444
 pool2 = us-west.ezil.me:4444
@@ -450,7 +450,7 @@ pool3 = asia.ezil.me:4444
 Example of a configuration file for Ethereum Classic:
 ```ini
 [Etchash]
-wallet = 0xffffffffffffffffffffffffffffffffffffffff
+wallet = 0x2482224523ce1a0d91c2f7c2b718224b11c0128f
 coin=Etc
 rigName = rig1
 email = someemail@org
@@ -465,7 +465,7 @@ pool7 = etc-au1.nanopool.org:19999
 Example of an equivalent file for Ethereum Classic:
 ```ini
 [Etchash]
-wallet = 0xffffffffffffffffffffffffffffffffffffffff
+wallet = 0x2482224523ce1a0d91c2f7c2b718224b11c0128f
 coin=Etc
 rigName = rig1
 email = someemail@org
@@ -473,13 +473,13 @@ email = someemail@org
 Example of a minimum file for Ethereum Classic:
 ```ini
 [Etchash]
-wallet=0xffffffffffffffffffffffffffffffffffffffff
+wallet=0x2482224523ce1a0d91c2f7c2b718224b11c0128f
 coin=Etc
 ```
 Example of a complete configuration file for solo QuarkChain mining:
 ```ini
 [Ethash]
-wallet=0xffffffffffffffffffffffffffffffffffffffff
+wallet=0x2482224523ce1a0d91c2f7c2b718224b11c0128f
 shardId=0x30001
 farmRecheck=200
 coin=Qkc
@@ -489,7 +489,7 @@ protocol=getwork
 Example of a minimum file for solo QuarkChain mining:
 ```ini
 [Ethash]
-wallet=0xffffffffffffffffffffffffffffffffffffffff
+wallet=0x2482224523ce1a0d91c2f7c2b718224b11c0128f
 coin=Qkc
 pool1=localhost:38391
 shardId=0x50001
@@ -497,7 +497,7 @@ shardId=0x50001
 Example of a file for solo QuarkChain mining on root shard:
 ```ini
 [Ethash]
-wallet=0xffffffffffffffffffffffffffffffffffffffff
+wallet=0x2482224523ce1a0d91c2f7c2b718224b11c0128f
 coin=Qkc
 pool1=localhost:38391
 shardId=null
@@ -505,7 +505,7 @@ shardId=null
 Example of a minimum file for QuarkChain mining using public nodes:
 ```ini
 [Ethash]
-wallet=0xffffffffffffffffffffffffffffffffffffffff
+wallet=0x2482224523ce1a0d91c2f7c2b718224b11c0128f
 coin=Qkc
 shardId=0x30001
 ```
@@ -513,7 +513,7 @@ shardId=0x30001
 Example of a configuration file for Ubiq:
 ```ini
 [Ubqhash]
-wallet = 0xffffffffffffffffffffffffffffffffffffffff
+wallet = 0x2482224523ce1a0d91c2f7c2b718224b11c0128f
 coin=Ubq
 rigName = rig1
 email = someemail@org
@@ -523,12 +523,12 @@ pool2 = eu.ubiqpool.io:8008
 Example of a minimum file for Ubiq:
 ```ini
 coin=UBQ
-wallet=0xffffffffffffffffffffffffffffffffffffffff
+wallet=0x2482224523ce1a0d91c2f7c2b718224b11c0128f
 ```
 Example of a complete file for Monero:
 ```ini
 [RandomX]
-wallet = fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+wallet = 0x2482224523ce1a0d91c2f7c2b718224b11c0128f
 rigName = rig1
 email = someemail@org
 pool1 = xmr-eu1.nanopool.org:14433
